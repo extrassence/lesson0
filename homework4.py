@@ -1,0 +1,7 @@
+my_string = input("Введите произвольный текст: ")
+print("Длина введенной строки: ", len(my_string))
+print("в верхнем регистре: ", my_string.upper())
+print("в нижнем регистре: ", my_string.lower())
+print("удалив все пробелы: ", my_string.replace(' ', ""))
+print("первый символ строки: ", my_string[0])
+print("последний символ строки: ", my_string[-1])
