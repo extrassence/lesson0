@@ -6,7 +6,7 @@ print("Оценка худшего ученика Прогульщикова:", 
 klass.update({'Sklerozov': 4, 'Progulshikov': 1})
 print('Список оценок за домашку:', klass)
 # Исключаем Прогульщикова из школы потому что он совсем не хочет учиться и не ходит на занятия:
-del klass['Progulshikov']
+print (klass.pop('Progulshikov'))
 print('Список оценок за домашку:', klass)
 
 set_grades = set(klass.values())
