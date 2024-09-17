@@ -4,8 +4,8 @@ team1_num = 5
 team2_num = 6
 score_1 = 40
 score_2 = 42
-team1_time = 1552.512
-team2_time = 2153.31451
+team1_time = 15520.512
+team2_time = 21530.31451
 
 timeavg1 = team1_time / (team1_num * score_1)
 timeavg2 = team2_time / (team2_num * score_2)
