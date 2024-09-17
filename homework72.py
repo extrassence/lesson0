@@ -8,6 +8,7 @@ def custom_write(name, text):
         file.write(i + '\n')
         retn[(index, carriage)] = i
         carriage = file.tell()
+    file.close()
     return retn
 
 info = [
