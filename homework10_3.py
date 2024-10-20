@@ -23,9 +23,9 @@ class Bank:
         for i in range (1, 101):
             dec = randint(50, 500)
             while self.balance < dec:
+                lock.acquire()
                 if self.still_deposit:
                     print(f'На счету: {self.balance} бабок, невозможно снять {dec} бабок\n', end='')
-                lock.acquire()
                 if not self.still_deposit: #Если поток депозитов закончился, то некому будет
                     lock.release()         #открыть запертый поток снятия
                     print('Депозиты закончились, включен механизм кредитования\n', end='')
